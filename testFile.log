@@ -1,0 +1,8 @@
+04:13:52.665 [main] INFO  MainClass - Inicia la aplicacion
+04:13:54.259 [main] INFO  MainClass - Finaliza la aplicacion
+04:27:59.312 [main] INFO  MainClass - Inicia la aplicacion
+04:28:00.767 [main] ERROR HTTP.RequestHandler - Se produjo un error
+java.io.IOException: null
+	at HTTP.RequestHandler.HTTPGetRequestJSONString(RequestHandler.java:31)
+	at MainClass.main(MainClass.java:15)
+04:28:00.893 [main] INFO  MainClass - Finaliza la aplicacion

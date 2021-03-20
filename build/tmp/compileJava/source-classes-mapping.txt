@@ -1,0 +1,10 @@
+Model/StarWarsPeopleRequest.java
+ Model.StarWarsPeopleRequest
+JTable/GUIJTable.java
+ JTable.GUIJTable
+Model/StarWarsCharacter.java
+ Model.StarWarsCharacter
+MainClass.java
+ MainClass
+HTTP/RequestHandler.java
+ HTTP.RequestHandler
