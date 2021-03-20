@@ -9,8 +9,8 @@ import org.slf4j.LoggerFactory;
 public class MainClass {
     final static Logger logger = LoggerFactory.getLogger(MainClass.class);
     public static void main(String[] args)  {
-        logger.info("Inicia la aplicacion");
-        System.out.println("hola mundo");
+        logger.info("Inicia la aplicacion con dificultad");
+        System.out.println("hola mundo papi");
         RequestHandler  requestHandler = new RequestHandler();
         var string = requestHandler.HTTPGetRequestJSONString("https://swapi.dev/api/people/");
         ObjectMapper objectMapper = new ObjectMapper();
@@ -20,14 +20,14 @@ public class MainClass {
         } catch (JsonProcessingException e) {
             logger.error("Se produjo un error", e);
         }
-
+	System.out.println("Loading...")
 
         var guijTable = new GUIJTable();
         var columns = new String[]{"NAME", "HEIGHT", "BIRTH YEAR"};
         guijTable.setColumns(columns);
         guijTable.setData(starWarsPeopleRequest.convertToStringArray());
         guijTable.display(500, 250);
-        logger.info("Finaliza la aplicacion");
+        logger.info("Finaliza la aplicacion con facilidad");
 
     }
 }
