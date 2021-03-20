@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "3.1.1"
 }
 
 group 'org.example'
@@ -7,6 +8,13 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+sonarqube {
+    properties {
+        property "sonar.projectKey", "X-Force-Solutions_X-Force-laboratorio-ci"
+        property "sonar.organization", "x-force-solutions"
+        property "sonar.host.url", "https://sonarcloud.io/"
+    }
 }
 
 dependencies {
