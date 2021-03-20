@@ -10,8 +10,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:5.7.0")
+    testCompile 'org.junit.jupiter:junit-jupiter-engine'
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.8.9'
     compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.2'
@@ -25,7 +29,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
-
+    testLogging {
+        events "passed", "skipped", "failed"}
 }
 
 

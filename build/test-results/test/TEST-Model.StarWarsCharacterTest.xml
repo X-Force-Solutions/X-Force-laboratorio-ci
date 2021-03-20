@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Model.StarWarsCharacterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-20T01:10:52" hostname="LEAHY-LAPTOP" time="0.011">
+  <properties/>
+  <testcase name="setHeightAndCheckHeight()" classname="Model.StarWarsCharacterTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
