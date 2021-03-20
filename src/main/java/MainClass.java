@@ -20,7 +20,7 @@ public class MainClass {
         } catch (JsonProcessingException e) {
             logger.error("Se produjo un error", e);
         }
-	System.out.println("Loading...")
+	System.out.println("Loading...");
 
         var guijTable = new GUIJTable();
         var columns = new String[]{"NAME", "HEIGHT", "BIRTH YEAR"};
